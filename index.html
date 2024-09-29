@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./images/4.svg" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jaro&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Good Game</title>
+</head>
+
+<body class="bg-black text-white">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark text-white">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand">
+                <img src="./images/4.svg" alt="" style="width: 60px" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="mainmenu">
+                <div class="d-md-flex d-block w-100">
+                    <ul class="navbar-nav d-md-flex flex-column flex-md-row align-items-center mb-0">
+                        <li class="nav-item">
+                            <a href="#" class="active nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="videodo container video-container">
+        <header class="bg-black text-white">
+            <video width="1150" height="430" autoplay muted loop class="centered-video">
+                <source src="images/Video from Eman Neyaz.mp4" type="video/mp4">
+        </header>
+        <div class="video-underline"></div>
+    </div>
+
+    <!-- Filter Section -->
+    <section class="container Filter d-flex  ">
+        <!-- <input type="text" placeholder="Filter"> -->
+        <select id="filterSelect">
+            <option value="ALL">ALL</option>
+            <option value="free">Free Games</option>
+            <option value="premium">Premium Games</option>
+        </select>
+    </section>
+
+    <!-- Free Games Section -->
+    <section id="freeGamesSection" class="container">
+        <section class="container container-fluid Free Games">
+            <div class="row">
+                <h2>For Free</h2>
+                <!-- <div class="container-fluid p-0">
+                    <div class="row container d-flex justify-content-between align-items-center no-gutters">
+                        <div style="position: relative;"
+                            class="col-md-8 col-sm-12 d-flex flex-column-reverse game-image-container">
+                            <div class="image-wrapper">
+                                <img src="./images/connect4.png" class="img-fluid main-img" alt="connect4">
+                                <div class="overlay" style="display: none;"></div>
+                                <button class="play-game-btn btn btn-primary"
+                                    data-url="https://a-amiin.github.io/Connect-4_Game/">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 d-flex flex-md-column-reverse flex-column rightside-free">
+                            <div class="mainsmall-left game-image-container">
+                                <div class="image-wrapper">
+                                    <img src="./images/xo.png" alt="XO" class="img-fluid">
+                                    <button class="play-game-btn" data-url="path/to/xo.html">Play</button>
+                                </div>
+                            </div>
+                            <div class="mainsmall-left game-image-container">
+                                <div class="image-wrapper">
+                                    <img src="./images/pinky.png" class="img-fluid" alt="pinky">
+                                    <button class="play-game-btn"
+                                        data-url="https://a-amiin.github.io/Dice-Game/">Play</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="container-fluid p-0">
+                    <div class="row container d-flex justify-content-between align-items-center no-gutters">
+                        <div style="position: relative;"
+                            class="col-md-8 col-sm-12 d-flex flex-column-reverse game-image-container">
+                            <div class="image-wrapper">
+                                <img src="./images/connect4.png" class="img-fluid main-img" alt="connect4">
+                                <div class="overlay" style="display: none;"></div>
+                                <button class="play-game-btn btn btn-primary"
+                                    data-url="https://a-amiin.github.io/Connect-4_Game/">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 d-flex flex-md-column-reverse flex-column rightside-free">
+                            <div class="mainsmall-left game-image-container">
+                                <div class="image-wrapper">
+                                    <img src="./images/xo.png" alt="XO" class="img-fluid">
+                                    <div class="overlay" style="display: none;"></div>
+                                    <button class="play-game-btn btn btn-primary"
+                                        data-url="https://a-amiin.github.io/Tic-Tac-Toe-Game/">Play
+                                        Now</button>
+                                </div>
+                            </div>
+                            <div class="mainsmall-left game-image-container">
+                                <div class="image-wrapper">
+                                    <img src="./images/pinky.png" class="img-fluid" alt="pinky">
+                                    <div class="overlay" style="display: none;"></div>
+                                    <button class="play-game-btn btn btn-primary"
+                                        data-url="https://a-amiin.github.io/Dice-Game/">Play Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premiumGamesSection" class="container">
+        <section class="container-premium container container-fluid">
+            <div class="row">
+                <h2>Premium</h2>
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-md-4 col-sm-12 d-flex flex-column-reverse">
+                            <div class="game-image mb-3" data-name="valornat" data-price="$35">
+                                <div class="mainsmall-left"><img src="images/valornat.png" alt="valornat"
+                                        class="img-fluid"></div>
+                                <div class="game-info"></div>
+                            </div>
+                            <div class="game-image mb-3" data-name="pees2020" data-price="$35">
+                                <div class="mainsmall-left"><img src="images/pes.png" alt="pees2020" class="img-fluid">
+                                </div>
+                                <div class="game-info"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 d-flex justify-content-md-end justify-content-sm-center">
+                            <div class="game-image" data-name="tomb raider" data-price="$35">
+                                <img src="images/dark.png" class="img-fluid main-img" alt="tomb raider">
+                                <div class="game-info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- last section -->
+        <section class="image-grid container">
+            <div class="advancedcontainer">
+                <div class="game-image" data-name="control" data-price="$35">
+                    <div class="grid-item"><img src="images/control.png" alt="Control"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="batman" data-price="$35">
+                    <div class="grid-item"><img src="images/batman.png" alt="Bat-man"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="Super mario" data-price="$35">
+                    <div class="grid-item"><img src="images/mario.png" alt="Super mario"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="Spider-man" data-price="$35">
+                    <div class="grid-item"><img src="images/spiderman.png" alt="Spider-man"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="Super-man" data-price="$35">
+                    <div class="grid-item"><img src="images/superman.png" alt="Super-man"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="Iron-man" data-price="$35">
+                    <div class="grid-item"><img src="images/ironman.png" alt="Iron-man"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="Fortnite" data-price="$35">
+                    <div class="grid-item"><img src="images/fortnite.png" alt="Fortnite"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="PUBG" data-price="$35">
+                    <div class="grid-item"><img src="images/bbg.png" alt="PUBG"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="Among Us" data-price="$35">
+                    <div class="grid-item"><img src="images/amoung.png" alt="Among Us"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="Amnesia" data-price="$35">
+                    <div class="grid-item"><img src="images/annesia.png" alt="Amnesia"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="A Plague Tale" data-price="$35">
+                    <div class="grid-item"><img src="images/plauge.png" alt="A Plague Tale"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="bioshock" data-price="$35">
+                    <div class="grid-item"><img src="images/bioshock.png" alt="Bioshock"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="bioshock2" data-price="$35">
+                    <div class="grid-item"><img src="images/bioshock2.png" alt="bioshock2" width="50px"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="Hitman" data-price="$35">
+                    <div class="grid-item"><img src="images/hitman.png" alt="Hitman"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="watchdogs" data-price="$35">
+                    <div class="grid-item"><img src="images/watchdogs.png" alt="Watch Dogs"></div>
+                    <div class="game-info"></div>
+                </div>
+                <div class="game-image" data-name="callofduty" data-price="$35">
+                    <div class="grid-item"><img src="images/callofduty.png" alt="Call of Duty"></div>
+                    <div class="game-info"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="./scripting.js"> </script>
+</body>
+
+</html>
